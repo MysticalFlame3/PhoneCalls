@@ -20,6 +20,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText edtPhone;
+    EditText edtPhone1;
+
     Button btnCall;
     Button btnSave ;
     Button btnSend;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         edtPhone = findViewById(R.id.edt);
+        edtPhone1 = findViewById(R.id.edt1);
         btnCall = findViewById(R.id.btn);
         btnSave = findViewById(R.id.btn1);
         btnSend = findViewById(R.id.btn2);
@@ -69,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String phoneNumber = edtPhone.getText().toString();
-                String message = edtPhone.getText().toString();
+                String message = edtPhone1.getText().toString();
                 if (!TextUtils.isEmpty(phoneNumber) && !TextUtils.isEmpty(message) ) {
                     sendsms(phoneNumber,message);
                 }

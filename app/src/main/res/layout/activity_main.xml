@@ -1,57 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:padding="16dp"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Phone Number"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
         android:id="@+id/edt"
         android:inputType="phone"
+        android:layout_marginBottom="16dp" />
 
-        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btn1" />
+    </LinearLayout>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:hint="Enter Message"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp"
         android:id="@+id/edt1"
         android:inputType="textMultiLine"
-
         />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call"
-        android:layout_marginTop="150dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/btn"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:layout_marginTop="210dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/btn1"
-        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send SMS"
-        android:layout_marginTop="270dp"
-        android:layout_centerHorizontal="true"
         android:id="@+id/btn2"
-        />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="450dp" />
 
-
-</RelativeLayout>
+</LinearLayout>
